@@ -1,33 +1,33 @@
 :root{
-    --accent-color: #50FA7B;
-    --background-color: #F8F8F2;
-    --primary-color: #282A36;
-    --secondary-color: #44475A;
+    --c-accent: #50FA7B;
+    --c-background: #F8F8F2;
+    --c-primary: #282A36;
+    --c-secondary: #44475A;
     scroll-behavior: smooth;
 }
 
 ::selection {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    background-color: var(--c-accent);
+    color: var(--c-primary);
   }
 
 .header {
     align-items: center;
-    background-color: var(--header-background-color);
+    background-color: var(--c-background);
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: center;
 }
 
-.header-image {
+.header__avatar {
     border-radius: 50%;
     height: 150px;
     width: 150px;
 }
 
-.header-title {
-    color: var(--primary-color);
+.header__name {
+    color: var(--c-primary);
     font-family: 'Fira Sans', sans-serif;
     font-size: 1.5em;
     font-weight: bold;
@@ -35,15 +35,15 @@
     margin-top: 40px;
 }
 
-.header-subtitle {
-    color: var(--secondary-color);
+.header__description {
+    color: var(--c-secondary);
     font-family: 'Fira Code', monospace;
     font-size: .75em;
     text-transform: lowercase;
 }
 
-.header-divider {
-    background: var(--secondary-color);
+.header__divider {
+    background: var(--c-secondary);
     border: 0px;
     height: 2px;
     margin-bottom: 20px;
@@ -51,36 +51,36 @@
     width: 150px;
 }
 
-.header-icons {
+.header__social-icons {
     display: flex;
 }
 
-.header-icons a {
+.header__social-icons a {
     padding: 10px;
-    color: var(--primary-color);
+    color: var(--c-primary);
 }
 
-.header-icons a:hover {
-    color: var(--secondary-color);
+.header__social-icons a:hover {
+    color: var(--c-secondary);
 }
 
-.header-icons svg {
+.header__social-icons svg {
     height: 22px;
     width: 22px;
 }
 
-.header-down {
+.header__scroll-down {
     bottom: 0;
-    color: var(--primary-color);
+    color: var(--c-primary);
     padding: 10px;
     position: absolute;
 }
 
-.header-down:hover {
-    color: var(--secondary-color);
+.header__scroll-down:hover {
+    color: var(--c-secondary);
 }
 
-.header-down svg {
+.header__scroll-down svg {
     height: 22px;
     width: 22px;
 }
