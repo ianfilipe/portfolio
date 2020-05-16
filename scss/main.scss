@@ -1,0 +1,80 @@
+@import 'variables', 'reset';
+
+::selection {
+    background-color: $c-accent;
+    color: $c-primary;
+}
+
+.header-container {
+    align-items: center;
+    background-color: $c-background;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+
+    > .avatar {
+        border-radius: 50%;
+        height: 160px;
+        width: 160px;
+    }
+
+    > .name {
+        color: $c-primary;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        margin-top: 32px;
+    }
+
+    > .description {
+        color: $c-secondary;
+        font-family: 'Fira Code', monospace;
+        font-size: 16px;
+        text-transform: lowercase;
+    }
+
+    > .divider {
+        background: $c-secondary;
+        border: 0;
+        height: 1px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        width: 160px;
+    }
+
+    > .social-icons {
+        display: flex;
+    }
+
+    > .social-icons a {
+        padding: 8px;
+        color: $c-primary;
+    }
+
+    > .social-icons a:hover {
+        color: $c-secondary;
+    }
+
+    > .social-icons svg {
+        height: 24px;
+        width: 24px;
+    }
+
+    > .scrolldown {
+        bottom: 0;
+        color: $c-primary;
+        padding: .5em;
+        position: absolute;
+    }
+
+    > .scrolldown:hover {
+        color: $c-secondary;
+    }
+
+    > .scrolldown svg {
+        height: 16px;
+        width: 16px;
+    }
+}
