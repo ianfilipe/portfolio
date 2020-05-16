@@ -1,0 +1,86 @@
+:root{
+    --accent-color: #50FA7B;
+    --background-color: #F8F8F2;
+    --primary-color: #282A36;
+    --secondary-color: #44475A;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+  }
+
+.header {
+    align-items: center;
+    background-color: var(--header-background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.header-image {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.header-title {
+    color: var(--primary-color);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.header-subtitle {
+    color: var(--secondary-color);
+    font-family: 'Fira Code', monospace;
+    font-size: .75em;
+    text-transform: lowercase;
+}
+
+.header-divider {
+    background: var(--secondary-color);
+    border: 0px;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.header-icons {
+    display: flex;
+}
+
+.header-icons a {
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+.header-icons a:hover {
+    color: var(--secondary-color);
+}
+
+.header-icons svg {
+    height: 22px;
+    width: 22px;
+}
+
+.header-down {
+    bottom: 0;
+    color: var(--primary-color);
+    padding: 10px;
+    position: absolute;
+}
+
+.header-down:hover {
+    color: var(--secondary-color);
+}
+
+.header-down svg {
+    height: 22px;
+    width: 22px;
+}
